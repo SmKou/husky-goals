@@ -1,58 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HuskyGoals</title>
+</head>
+<body>
 	<header>
 		<div id="logo">
 			<img alt="" src="/husky.png" />
 			<h1>HuskyGoals</h1>
 		</div>
 		<nav>
-			<button title="counter" id="counter-btn">
-				<div class="icon counter-icon">
-					<div class="bar"></div>
-					<div class="bar"></div>
-				</div>
-			</button>
-			<button title="timer" id="timer-btn">
-				<div class="icon timer-icon">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="tick-bar"></div>
-				</div>
-			</button>
-			<button title="checklist" id="checklist-btn">
-				<div class="icon checklist-icon">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-				</div>
-			</button>
+			<input />
+			<select name="menu" id="menu">
+				<option value="counter">Counters</option>
+				<option value="timer">Timers</option>
+				<option value="task">Tasks</option>
+				<option value="reminder">Reminder</option>
+				<option value="tracker">Tracker</option>
+			</select>
 		</nav>
 	</header>
-    <main>
-		<section id="welcome"></section>
-		<section id="counter" class="inactive">
-			<article></article>
-			<aside></aside>
-		</section>
-		<section id="timer" class="inactive">
-			<article></article>
-			<aside></aside>
-		</section>
-		<section id="checklist" class="inactive">
-			<article></article>
-			<aside></aside>
-		</section>
-    </main>
-    <footer></footer>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+	<main>
+		<section></section>
+		<aside></aside>
+	</main>
+	<footer></footer>
+	<script type="module" src="/src/main.js"></script>
+</body>
 </html>
